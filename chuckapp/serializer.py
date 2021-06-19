@@ -1,8 +1,8 @@
-from .models import Quote
+from .models import Joke
 from rest_framework import serializers
 
 
-class QuoteSerializer(serializers.ModelSerializer):
+class JokeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Quote
+        model = Joke
         fields = ['content']

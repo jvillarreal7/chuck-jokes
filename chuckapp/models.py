@@ -1,4 +1,4 @@
 from django.db import models
 
-class Quote(models.Model):
+class Joke(models.Model):
     content = models.TextField()

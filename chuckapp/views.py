@@ -1,10 +1,10 @@
-from .models import Quote
-from .serializer import QuoteSerializer
+from .models import Joke
+from .serializer import JokeSerializer
 from rest_framework import viewsets
 
-class QuoteViewSet(viewsets.ModelViewSet):
+class JokeViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows quotes to be viewed.
+    API endpoint that allows jokes to be viewed.
     """
-    queryset = Quote.objects.all()
-    serializer_class = QuoteSerializer
+    queryset = Joke.objects.all()
+    serializer_class = JokeSerializer

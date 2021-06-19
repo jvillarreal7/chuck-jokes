@@ -19,7 +19,7 @@ from rest_framework import routers
 from chuckapp import views
 
 router = routers.DefaultRouter()
-router.register(r'quotes', views.QuoteViewSet)
+router.register(r'jokes', views.JokeViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
